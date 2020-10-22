@@ -31,7 +31,7 @@ function useAqlSubscription(client, payloadProperty) {
       userToken,
     }),
   };
-  fetch(`/analytics`, options)
+  fetch(`https://aqls.herokuapp.com//analytics`, options)
     // .then((data) => data.json())
     // .then((result) => setColor(result.data.newColor.cssColor))
     .catch((err) => console.log(err));

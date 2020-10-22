@@ -23,7 +23,7 @@ const app = express();
 app.use(express.json());
 
 const pubsub = new PubSub();
-const traql = new Traql(resolvers);
+const traql = new Traql(resolvers, 'de794383-0d68-48b5-8882-8586354ac9b4');
 
 const server = new ApolloServer({
   typeDefs,
